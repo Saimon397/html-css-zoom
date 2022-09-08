@@ -1,1 +1,56 @@
 /*style*/
+
+/*header*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+    min-width: 700px;
+}
+
+.header-settings {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.header-settings .header-settings-item {
+    float: left;
+    display: flex;
+    background-color: #4A4A4A;
+    padding: 5px;
+    font-size: 12px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+a .speaker {
+    margin-right: 5px;
+}
+a, i {
+    color: white;
+    text-decoration: none;
+}
+
+/*main*/
+
+.meeting-container {
+    padding-top: 85px;
+    padding-bottom: 15px;
+    height: calc(100vh - 155px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow-y: auto;
+}
+
+
+
