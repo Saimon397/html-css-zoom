@@ -29,6 +29,7 @@ header {
     border-radius: 5px;
     padding: 5px 5px;
     margin: 5px;
+    font-size: 12px;
 }
 
 a {
@@ -89,7 +90,7 @@ footer {
     display: flex;
 }
 
-footer .command_bar{
+footer .command_bar {
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -97,33 +98,39 @@ footer .command_bar{
     text-align: center;
     padding-left: 15px;
 }
-footer .command_bar i{
+
+footer .command_bar i {
     font-size: 20px;
     padding-bottom: 10px;
 }
-footer .command_bar i + div{
+
+footer .command_bar i+div {
     font-size: 11px;
 }
-footer .command_bar .flex > div{
+
+footer .command_bar .flex>div {
     padding-left: 20px;
 }
-footer .command_bar h5{
+
+footer .command_bar h5 {
     color: red;
     background-color: rgb(67, 67, 67);
     line-height: 55px;
     min-width: 100px;
 }
-footer .green{
+
+footer .green {
     color: green;
 }
-footer .command_bar .flex > div.arrow{
+
+footer .command_bar .flex>div.arrow {
     font-size: 10px;
     padding-right: 0;
     padding-left: 0;
     padding-top: 12px;
 }
 
-footer .command_bar .flex > div:hover {
+footer .command_bar .flex>div:hover {
     color: #4A4A4A;
     cursor: pointer;
 }
