@@ -1,13 +1,17 @@
 /*style*/
 
-/*header*/
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*header*/
 
 body {
     background-color: black;
@@ -31,19 +35,20 @@ body {
     border-radius: 3px;
 }
 
-a .speaker {
-    margin-right: 5px;
-}
 a, i {
     color: white;
     text-decoration: none;
 }
 
+.fa-grip {
+    margin-right: 5px;
+}
+
 /*main*/
 
 .meeting-container {
-    padding-top: 85px;
-    padding-bottom: 15px;
+    padding-top: 80px;
+    padding-bottom: 20px;
     height: calc(100vh - 155px);
     display: flex;
     flex-wrap: wrap;
@@ -52,5 +57,84 @@ a, i {
     overflow-y: auto;
 }
 
+.meeting-container .user {
+    width: 160px;
+    height: 100px;
+    background-image: url("https://picsum.photos/300/200?random=20%22%3E");
+    background-size: cover;
+    position: relative;
+    margin: 5px 2px;
+}
 
+.meeting-container .user .info {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(140, 140, 140, 0.5);
+    color: white;
+    font-size: 9px;
+    max-width: 80%;
+}
 
+.meeting-container .user .info .user-id {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meeting-container .user .info .microphone {
+    margin-right: 2px;
+}
+
+/*footer*/
+
+.footer-bar {
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bar .footer-section {
+    display: flex;
+}
+
+.footer-bar .footer-section .footer-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.footer-bar .footer-section .footer-item .footer-icon {
+    font-size: 17px;
+}
+
+.footer-bar .footer-section .footer-item .footer-description {
+    font-size: 9px;
+    margin: 7px 0;
+}
+
+.footer-bar .footer-section .footer-item .item-more {
+    font-size: 8px;
+    margin: 2px 15px;
+}
+
+.footer-bar .footer-section #share-screen {
+    margin-right: 15px;
+}
+
+.footer-bar .footer-section #share-screen .footer-icon{
+    color: #4BC800;
+}
+
+.footer-bar .footer-section #end-meeting {
+    color: #FF0000;
+    background-color: #4A4A4A; }
